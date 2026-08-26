@@ -5,7 +5,7 @@
 2020-04-09T14:15:09.344Z: Failed Login: username=user name ip=80.10.11.12
 
 # Access of unauthorized host in /var/log/gitlab/gitlab-rails/application_json.log
-# filterOptions: [{"mode": "json"}]
+# filterOptions: [{"logtype": "json"}]
 
 # failJSON: { "time": "2023-08-25T13:25:19", "match": true , "host": "87.250.224.11" }
 {"severity":"INFO","time":"2023-08-25T11:25:19.979Z","correlation_id":"01H8P721YTW1YH5Q7YCSJPVJ5T","meta.caller_id":"SessionsController#new","meta.remote_ip":"87.250.224.11","meta.feature_category":"system_access","meta.client_id":"ip/87.250.224.11","message":"Failed Login: username=admin ip=87.250.224.11"}
