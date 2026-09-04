@@ -1,0 +1,7 @@
+# a login from a new IP must match
+# failJSON: { "match": true, "host": "203.0.113.10" }
+fakeaccount.security: Login from new IP for username=alice from ip=203.0.113.10
+
+# a different security event must not match
+# failJSON: { "match": false }
+fakeaccount.security: Password reset for username=alice from ip=203.0.113.10
