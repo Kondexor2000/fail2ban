@@ -93,6 +93,18 @@ Code status:
 
 * [![CI](https://github.com/fail2ban/fail2ban/actions/workflows/main.yml/badge.svg)](https://github.com/fail2ban/fail2ban/actions/workflows/main.yml)
 
+FakeAccount integration:
+------------------------
+
+The custom filter in `config/filter.d/fakeaccount-auth.conf` matches failed
+login events emitted by the Django FakeAccount application. Copy or install
+`config/jail.d/fakeaccount.local`, set its `logpath` to the application's
+`security.log`, and set `enabled = true` before restarting Fail2Ban.
+
+Validate the deployed log with:
+
+    fail2ban-regex /srv/fakeaccount/security.log fakeaccount-auth
+
 Contact:
 --------
 
