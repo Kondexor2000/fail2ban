@@ -96,8 +96,9 @@ Code status:
 FakeAccount integration:
 ------------------------
 
-The custom filter in `config/filter.d/fakeaccount-auth.conf` matches failed
-login events emitted by the Django FakeAccount application. Copy or install
+The custom filter in `config/filter.d/fakeaccount-auth.conf` matches successful
+logins to an existing account from a different IP than its previous login,
+as emitted by the Django FakeAccount application. Copy or install
 `config/jail.d/fakeaccount.local`, set its `logpath` to the application's
 `security.log`, and set `enabled = true` before restarting Fail2Ban.
 

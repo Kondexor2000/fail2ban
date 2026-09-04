@@ -1,7 +1,7 @@
-[fakeaccount-auth]
+[fakeaccount-new-ip]
 enabled = false
 filter = fakeaccount-auth
 logpath = /path/to/fakeaccount/security.log
-maxretry = 5
+maxretry = 1
 findtime = 10m
 bantime = 1h
